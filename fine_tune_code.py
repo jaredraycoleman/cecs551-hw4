@@ -9,12 +9,11 @@ parser.add_argument('-o', '--output', metavar='PATH',
                     type=str, default=None,
                     help='path to save the model to.')
 
-import tensorflow as tf
-from tf.keras.applications import VGG16
-from tf.keras.preprocessing.image import ImageDataGenerator
-from tf.keras import optimizers
-from tf.keras.models import Sequential, Model
-from tf.keras.layers import Dropout, Flatten, Dense, Input
+from keras.applications import VGG16
+from keras.preprocessing.image import ImageDataGenerator
+from keras import optimizers
+from keras.models import Sequential, Model
+from keras.layers import Dropout, Flatten, Dense, Input
  
 import os 
 
